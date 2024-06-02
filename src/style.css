@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    font-family: url('https://fonts.googleapis.com/css2?family=Poppins');
+    font-weight: 600;
+    color: white;
+    background-color: #3664ad;
+}
+
+.itemMenu{
+    @apply flex cursor-pointer hover:bg-blue-800 rounded-md text-center items-center justify-center transition-all p-2
+}
