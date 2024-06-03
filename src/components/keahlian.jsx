@@ -6,7 +6,7 @@ const TentangSaya = () => {
     "Seorang adalah seorang pengembang perangkat lunak yang berdedikasi dan memiliki pengetahuan dengan pengetahuan di bidang pengembangan perangkat lunak dan game. Memiliki latar belakang yang solid dalam membangun aplikasi perangkat lunak yang inovatif dan kreatif. Berfokus pada penciptaan aplikasi yang efisien dan ramah pengguna untuk menyelesaikan tantangan teknis. Lulusan Sekolah Menengah Kejuruan (SMK) di bidang Pengembangan Perangkat Lunak dan Gim (PPLG), yang memberikan fondasi yang kokoh dalam pemahaman praktis tentang konsep-konsep pemrograman dan pengembangan perangkat lunak.";
   return (
     <>
-      <div className="flex flex-col items-center justify-center px-36 py-10 ssm:hidden lg:block">
+      <div className="flex flex-col items-center justify-center ssm:hidden lg:block">
         <div className="flex flex-col p-24 bg-blue-500 rounded-xl gap-12">
           <h1 className="flex justify-center items-center text-3xl">
             Penguasaan Keahlian
@@ -32,7 +32,7 @@ const TentangSaya = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center px-16 py-5 ssm:block lg:hidden">
+      <div className="flex flex-col items-center justify-center ssm:block lg:hidden">
         <div className="flex flex-col p-5 bg-blue-500 rounded-xl gap-12">
           <h1 className="flex justify-center items-center text-xl text-center">
             Penguasaan Keahlian

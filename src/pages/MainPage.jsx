@@ -7,12 +7,14 @@ import Keahlian from "../components/keahlian";
 
 const MainPage = () => {
   return (
-  <>
-    <Nav/>
-    <TentangSaya/>
-    <Pengalaman/>
-    <Keahlian/>
-  </>
+    <>
+      <Nav />
+      <div className="flex flex-col p-24 gap-10">
+        <TentangSaya />
+        <Pengalaman />
+        <Keahlian />
+      </div>
+    </>
   );
 };
 

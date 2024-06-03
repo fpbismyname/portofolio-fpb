@@ -7,17 +7,18 @@ const nav = () => {
 
   function openMenu() {
     setToogle(true);
-    setTimeout(()=>{
-        setToogle(false)
-    },500)
   }
   function closeMenu() {
     setToogle(false);
   }
-  function click(value){
-    switch(value){
-        case 1:
-            
+  function closing() {
+    setTimeout(()=>{
+      setToogle(false);
+    }, 500)
+  }
+  function click(value) {
+    switch (value) {
+      case 1:
     }
   }
 
@@ -29,24 +30,24 @@ const nav = () => {
 
   return (
     <>
-      <div className="text-xl flex flex-row bg-blue-500 justify-between p-4">
-        <div className="flex items-center">
-          <AiFillFileText size={30} className="mr-3" />
-          Portofolio FPB
-        </div>
-        {/* Mobile View */}
-        <div className="ssm:hidden lg:block">
-          <div className="flex gap-5">
-            <a href="#" className="itemMenu">
-              {MenuName[1]}
-            </a>
-            <a href="#" className="itemMenu">
-              {MenuName[2]}
-            </a>
-            <a href="#" className="itemMenu">
-              {MenuName[3]}
-            </a>
+      <div className="text-xl flex justify-between w-full fixed right-0 p-5 bg-blue-500">
+          <div className="flex items-center">
+            <AiFillFileText size={30} className="mr-3" />
+            Portofolio FPB
           </div>
+          {/* Mobile View */}
+          <div className="ssm:hidden lg:block">
+            <div className="flex gap-5">
+              <a href="#" className="itemMenu">
+                {MenuName[1]}
+              </a>
+              <a href="#" className="itemMenu">
+                {MenuName[2]}
+              </a>
+              <a href="#" className="itemMenu">
+                {MenuName[3]}
+              </a>
+            </div>
         </div>
         {/* Close Button */}
         <div className="lg:hidden ssm:block flex items-center">
@@ -59,9 +60,9 @@ const nav = () => {
       </div>
       {/* Toogle Visible Menu */}
       {toogle ? (
-        <div className="lg:hidden ssm:block bg-blue-500">
-          <div className="flex flex-col text-center items-center justify-center">
-            <ul>
+        <div className="lg:hidden ssm:block bg-blue-600 fixed z-10 right-0 top-14 rounded-md">
+          <div className="flex flex-col">
+            <ul onClick={closing}>
               <li className="itemMenu">{MenuName[1]}</li>
               <li className="itemMenu">{MenuName[2]}</li>
               <li className="itemMenu">{MenuName[3]}</li>
